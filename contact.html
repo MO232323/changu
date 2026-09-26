@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Changu Media and Tech</title>
+  <meta name="description" content="Contact Changu Media and Tech in Blantyre, Malawi. Phone: 0996170755 | Email: changunmedia@gmail.com. Get your free professional website today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link" aria-label="Changu Media and Tech Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="200" height="50">
+          <defs>
+            <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#BFF642"/>
+              <stop offset="100%" style="stop-color:#7BCB2A"/>
+            </linearGradient>
+          </defs>
+          <circle cx="40" cy="40" r="36" fill="none" stroke="url(#g1)" stroke-width="4"/>
+          <circle cx="40" cy="40" r="30" fill="#0d1a12"/>
+          <text x="40" y="48" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900" fill="white" text-anchor="middle">CM</text>
+          <polygon points="58,28 58,52 78,40" fill="url(#g1)"/>
+          <text x="95" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="white">Changu</text>
+          <text x="95" y="58" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#BFF642">Media and Tech</text>
+        </svg>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Get Free Website</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact <span style="color:var(--primary)">Us Today</span></h1>
+      <p>Let’s build your online presence. Reach out for your free professional website or any of our services.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h2 style="margin-bottom:1.5rem;font-size:1.4rem;">Get in Touch</h2>
+          
+          <div class="contact-item">
+            <div class="icon">📞</div>
+            <div>
+              <h4>Phone / WhatsApp</h4>
+              <p><a href="tel:+265996170755">0996 170 755</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:changunmedia@gmail.com">changunmedia@gmail.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Blantyre, Malawi</p>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border);">
+            <h4 style="color:var(--primary);margin-bottom:0.75rem;">Free Website Offer</h4>
+            <p style="color:var(--text-muted);font-size:0.95rem;">We develop your website FREE (max 7 pages). You only pay for hosting and domain. Tell us about your project in the form or call us directly!</p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h2 style="margin-bottom:1.25rem;font-size:1.4rem;">Send a Message</h2>
+          <form action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you! Please also reach us on WhatsApp 0996170755 or email changunmedia@gmail.com for faster response.');">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="099X XXX XXX">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="service">What are you interested in?</label>
+              <select id="service" name="service">
+                <option value="free-website">Free Professional Website</option>
+                <option value="hosting">Website Hosting</option>
+                <option value="domain">Domain Name</option>
+                <option value="app">Mobile App</option>
+                <option value="ai">AI Solutions</option>
+                <option value="other">Other / Custom Project</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your business and what you need..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="180" height="45">
+          <defs>
+            <linearGradient id="gf" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#BFF642"/>
+              <stop offset="100%" style="stop-color:#7BCB2A"/>
+            </linearGradient>
+          </defs>
+          <circle cx="40" cy="40" r="36" fill="none" stroke="url(#gf)" stroke-width="4"/>
+          <circle cx="40" cy="40" r="30" fill="#0d1a12"/>
+          <text x="40" y="48" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900" fill="white" text-anchor="middle">CM</text>
+          <polygon points="58,28 58,52 78,40" fill="url(#gf)"/>
+          <text x="95" y="36" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="white">Changu</text>
+          <text x="95" y="58" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#BFF642">Media and Tech</text>
+        </svg>
+        <p>Your Vision, Our Technology. Websites • Hosting • Domains • AI Solutions in Blantyre, Malawi.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Website Development</a></li>
+          <li><a href="services.html">Web Hosting</a></li>
+          <li><a href="services.html">Domain Registration</a></li>
+          <li><a href="services.html">AI Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>📞 <a href="tel:+265996170755">0996 170 755</a></p>
+        <p>✉️ <a href="mailto:changunmedia@gmail.com">changunmedia@gmail.com</a></p>
+        <p>📍 Blantyre, Malawi</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Changu Media and Tech. All rights reserved.</span>
+      <span>Websites • Hosting • Domains • More</span>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>

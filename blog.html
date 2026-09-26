@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & News | Changu Media and Tech</title>
+  <meta name="description" content="Tips, news and insights on websites, digital marketing and technology from Changu Media and Tech.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link" aria-label="Changu Media and Tech Home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="200" height="50">
+          <defs>
+            <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#BFF642"/>
+              <stop offset="100%" style="stop-color:#7BCB2A"/>
+            </linearGradient>
+          </defs>
+          <circle cx="40" cy="40" r="36" fill="none" stroke="url(#g1)" stroke-width="4"/>
+          <circle cx="40" cy="40" r="30" fill="#0d1a12"/>
+          <text x="40" y="48" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900" fill="white" text-anchor="middle">CM</text>
+          <polygon points="58,28 58,52 78,40" fill="url(#g1)"/>
+          <text x="95" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="white">Changu</text>
+          <text x="95" y="58" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#BFF642">Media and Tech</text>
+        </svg>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Get Free Website</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Blog & <span style="color:var(--primary)">News</span></h1>
+      <p>Insights, tips and updates to help your business succeed online.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-thumb">🚀</div>
+          <div class="blog-body">
+            <div class="blog-meta">Sept 15, 2026 • Website Tips</div>
+            <h3>Why Every Business in Malawi Needs a Professional Website</h3>
+            <p>In 2026, your website is often the first impression. Here’s why a professional site matters more than ever and how to get one free.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-thumb">🔒</div>
+          <div class="blog-body">
+            <div class="blog-meta">Sept 8, 2026 • Security</div>
+            <h3>Free SSL Certificates: Protect Your Visitors & Rank Higher</h3>
+            <p>All our hosting plans include free SSL. Learn what it is and why search engines (and customers) prefer secure sites.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-thumb">📱</div>
+          <div class="blog-body">
+            <div class="blog-meta">Aug 28, 2026 • Design</div>
+            <h3>Mobile-First Design: Reaching Customers on Their Phones</h3>
+            <p>Most internet users in Malawi browse on mobile. We explain how responsive design keeps them engaged.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-thumb">💡</div>
+          <div class="blog-body">
+            <div class="blog-meta">Aug 15, 2026 • AI</div>
+            <h3>How AI Can Help Small Businesses Work Smarter</h3>
+            <p>From chatbots to content tools — practical AI solutions that don’t require a huge budget.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-thumb">🌐</div>
+          <div class="blog-body">
+            <div class="blog-meta">Aug 1, 2026 • Hosting</div>
+            <h3>Choosing the Right Hosting Plan for Your Growing Business</h3>
+            <p>Starter, Business, Professional or Enterprise? A simple guide to match storage, email and performance needs.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-thumb">📈</div>
+          <div class="blog-body">
+            <div class="blog-meta">July 20, 2026 • Growth</div>
+            <h3>5 Ways a Blog Can Grow Your Online Presence</h3>
+            <p>Content still wins. How adding a Blog/News page helps with SEO and customer trust.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready for Your Own Professional Website?</h2>
+      <p>Development is free (up to 7 pages). Contact us to get started.</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us Today</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="180" height="45">
+          <defs>
+            <linearGradient id="gf" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#BFF642"/>
+              <stop offset="100%" style="stop-color:#7BCB2A"/>
+            </linearGradient>
+          </defs>
+          <circle cx="40" cy="40" r="36" fill="none" stroke="url(#gf)" stroke-width="4"/>
+          <circle cx="40" cy="40" r="30" fill="#0d1a12"/>
+          <text x="40" y="48" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900" fill="white" text-anchor="middle">CM</text>
+          <polygon points="58,28 58,52 78,40" fill="url(#gf)"/>
+          <text x="95" y="36" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="white">Changu</text>
+          <text x="95" y="58" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#BFF642">Media and Tech</text>
+        </svg>
+        <p>Your Vision, Our Technology. Websites • Hosting • Domains • AI Solutions in Blantyre, Malawi.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Website Development</a></li>
+          <li><a href="services.html">Web Hosting</a></li>
+          <li><a href="services.html">Domain Registration</a></li>
+          <li><a href="services.html">AI Solutions</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>📞 <a href="tel:+265996170755">0996 170 755</a></p>
+        <p>✉️ <a href="mailto:changunmedia@gmail.com">changunmedia@gmail.com</a></p>
+        <p>📍 Blantyre, Malawi</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Changu Media and Tech. All rights reserved.</span>
+      <span>Websites • Hosting • Domains • More</span>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
